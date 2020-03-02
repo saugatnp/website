@@ -1,0 +1,58 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    max-width: 100%;
+}
+.carousel-inner img {
+    margin-left: 130px;
+    width: 80%;
+    height: 80vh;
+}
+.carousel-caption{
+    width: 80%;
+    color : black;
+    font-size: 50px;
+}
+.navbar-brand{
+    font-size: 40px;
+}
+.aboutus{
+    width: 100%;
+    background-color: gray;
+}
+.wired,.wireless,.accessories,.admin,.adminindex{
+    background-color: gray;
+}
+.card{
+    text-align: center;
+}
+.card-body2{
+    float: left;
+    width:50%;
+    text-align: center;
+}
+.card-body{
+    float: left;
+    text-align: center;
+}
+.fulldetail{
+    height:100%;
+    background-color:gray;
+}
+.prodetail{
+    margin: 40px;
+    max-width:100%;
+    background-color: white;
+}
+.image{
+    width:50%;
+    height:80%;
+    float: left;
+}
+.footer{
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}

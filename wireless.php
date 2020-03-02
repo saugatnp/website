@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      IT Biz Solutions
+    </title>
+    <?php 
+      include_once "navbar.php";
+    ?>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="wireless">
+  <div class="wirelesspro ">
+  <h1 style=" font-size:60px; text-align:center;">WIRELESS</h1>
+  <div class="row text-centre py-5">
+  <?php
+   include 'php/functions.php';
+   $checkproduct=new DB_con();
+   $check='wireless';
+   $hit2=$checkproduct->checkcat($check);
+   $sql=$checkproduct->fetchproduct();
+   $cnt=1;
+   while($row=mysqli_fetch_assoc($hit2))
+   {
+   ?>
+        <div class="col-md-2 col-sm-5 my-2 my-md-0">
+            <div class="card">
+            <div>
+                <img width="200" height="200" src="http://localhost/website/images/<?=$row['images'];?>">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><?php echo htmlentities($row['productname']);?></h5>
+                <h5>
+                  <span class="price">$<?php echo htmlentities($row['price']);?></span>
+                </h5>
+                <a href="productdetails.php?id=<?php echo htmlentities($row['id']);?>"><button type="submit">Details</button></a>
+               <br>
+                <a href="php/form.php"> <button type="submit"  >Add to cart</button></a>
+              </div>
+            </div>
+        </div>
+    <?php
+// for serial number increment
+$cnt++;
+}?>
+  </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <?php
+    include "footer.html";
+    ?>
+  </body>
+</html>
