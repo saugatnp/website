@@ -89,6 +89,7 @@ public function getproname($userid){
 	$result=mysqli_query($this->dbh,"select productname from tblproduct where id='$userid'");
 	return $result;
 }
+////checkckck
 //insert user into database
 public function insertuser($fname,$lname,$email,$phoneNo,$address,$password){
 	$result =mysqli_query($this->dbh," insert into customers (firstName , lastName , email , address , phoneNo , password) values('$fname' , '$lname' ,'$email' , '$address' ,'$phoneNo' ,'$password')");
