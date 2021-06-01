@@ -1,9 +1,9 @@
 <?php
 session_start();
 define('DB_SERVER','localhost');
-define('DB_USER','root');
-define('DB_PASS' ,'');
-define('DB_NAME', 'it solutions');
+define('DB_USER','saugat');
+define('DB_PASS' ,'saugat');
+define('DB_NAME', 'website');
 class DB_con
 {
 public function __construct()
@@ -89,10 +89,25 @@ public function getproname($userid){
 	$result=mysqli_query($this->dbh,"select productname from tblproduct where id='$userid'");
 	return $result;
 }
-////checkckck
+
 //insert user into database
-public function insertuser($fname,$lname,$email,$phoneNo,$address,$password){
-	$result =mysqli_query($this->dbh," insert into customers (firstName , lastName , email , address , phoneNo , password) values('$fname' , '$lname' ,'$email' , '$address' ,'$phoneNo' ,'$password')");
+public function insertuser($fname,$lname,$email,$address,$phoneNo,$password,$token="a2asa"){
+	$result =mysqli_query($this->dbh," insert into customers (firstName , lastName , email , address , phoneNo , password ,token) values('$fname' , '$lname' ,'$email' , '$address' ,'$phoneNo' ,'$password' ,'$token')");
+	return $result;
+}
+//check user login
+public function checkuser($email,$password){
+	$result = mysqli_query($this->dbh,"select * from customers where email ='$email' and password = '$password'");
+	return $result;
+}
+//update token after login
+public function updatetoken($token,$email,$password){
+	$result = mysqli_query($this->dbh,"update customers set token='$token' where email ='$email' and password = '$password'");
+	return $result;
+}
+//check for token in db
+public function checktoken($token){
+	$result = mysqli_query($this->dbh , "select * from customers where token = '$token'");
 	return $result;
 }
 }

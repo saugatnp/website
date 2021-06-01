@@ -24,6 +24,7 @@
    <th>Email</th>
    <th>Contact</th>
    <th>Address</th>
+   <th>Product Name</th>
    <th>Posting Date</th>
    <th>Edit</th>
    <th>Delete</th>
@@ -45,6 +46,7 @@
       <td><?php echo htmlentities($row['EmailId']);?></td>
       <td><?php echo htmlentities($row['ContactNumber']);?></td>
       <td><?php echo htmlentities($row['Address']);?></td>
+      <td><?php echo htmlentities($row['proname']);?></td>
       <td><?php echo htmlentities($row['PostingDate']);?></td>
    <td><a href="updateform.php?id=<?php echo htmlentities($row['id']);?>"><button class="btn btn-primary btn-xs">Edit<span class="glyphicon glyphicon-pencil"></span></button></a></td>
    <td><a href="delete.php?id=<?php echo htmlentities($row['id']);?>"><button class="btn btn-danger btn-xs" onClick="return confirm('Do you really want to delete');">Delete<span class="glyphicon glyphicon-trash"></span></button></a></td>
