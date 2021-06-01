@@ -10,16 +10,29 @@
         <a class="nav-link" href="index.php">Home <span class="sr-only"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="wired.php">wired</a>
+        <a class="nav-link" href="wired.php">Wired</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="wireless.php">wireless</a>
+        <a class="nav-link" href="wireless.php">Wireless</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="accessories.php">accessories</a>
+        <a class="nav-link" href="accessories.php">Accessories</a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Log In
+        </a>
+        <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="login.php">User</a>
+          
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="admin.php">Admin</a>
+        </div>
+
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="admin.php">admin</a>
+        <a class="nav-link" href="sign_up.php">Sign In</a>
       </li>
     </ul>
   </div>

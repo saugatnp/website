@@ -13,18 +13,18 @@
 <div class="row">
 <div class="col-md-4"><b>Product Name</b>
 <input type="text" name="productname" class="form-control" required>
-</div>
+</div><br>
 <div class="col-md-4"><b>Details</b>
 <input type="text" name="details" class="form-control" required>
-</div>
+</div><br>
 </div>
 <div class="row">
 <div class="col-md-4"><b>Features</b>
 <input type="text" name="features" class="form-control" required>
-</div>
+</div><br>
 <div class="col-md-4"><b>Price</b>
 <input type="text" name="price" class="form-control" maxlength="10" required>
-</div>
+</div><br>
 </div>
 <div class="row">
     <div class="col-md-8"><b>Category</b>
@@ -33,7 +33,7 @@
                         <option value="wireless">Wireless</option>
                         <option value="accessories">Accessories</option>
                 </select>
-    </div>
+    </div><br>
     <div class="col-md-8"><b>Image</b>
         <input type="hidden" name="size" value="1000000">
         <div>

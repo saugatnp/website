@@ -20,11 +20,11 @@
             </div>
             <br><br><br>
             <p >
-            <pre>
-            Name:            IT Biz Solutions<br>
-            Address:         234 Macedon St, Camperdown NSW, 2050<br>
-            Telephone number:02 687 87878<br>
-            Email address:   <a href="mailto:info@itbizsolutions.com.au">info@itbizsolutions.com.au</a><br>
+            <pre><b><center>
+            Name:       IT Biz Solutions<br>
+            Address:  Namsaling-4,Illam<br>
+            Telephone number:027-520145<br>
+            Email address:   <a href="mailto:info@itbizsolutions.com.au">info@itbizsolutions.com.au</a></b><br></center>
   </pre>
         </p>
         </section>

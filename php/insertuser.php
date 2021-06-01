@@ -1,21 +1,21 @@
 <?php
 // include database connection file
-require_once'functions.php';
+require_once "functions.php";
 // Object creation
 $insertdata=new DB_con();
 if(isset($_POST['insert']))
 {
 // Posted Values
-$proname=$_GET['proname'];
-$fname=$_POST['firstname'];
-$lname=$_POST['lastname'];
-$emailid=$_POST['emailid'];
-$contactno=$_POST['contactno'];
+$fname=$_POST['firstName'];
+$lname=$_POST['lastName'];
+$email=$_POST['email'];
+$phoneNo=$_POST['phoneNo'];
 $address=$_POST['address'];
-echo $proname;
+$password=$_POST['password'];
 
+echo $fname;
 //Function Calling
-$sql=$insertdata->insert($fname,$lname,$emailid,$contactno,$address,$proname);
+$sql=$insertdata->insertuser($fname,$lname,$emailid,$contactno,$address,$proname);
 if($sql)
 {
 // Message for successfull insertion

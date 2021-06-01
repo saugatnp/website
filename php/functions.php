@@ -3,7 +3,7 @@ session_start();
 define('DB_SERVER','localhost');
 define('DB_USER','root');
 define('DB_PASS' ,'');
-define('DB_NAME', 'saugat');
+define('DB_NAME', 'it solutions');
 class DB_con
 {
 public function __construct()
@@ -87,6 +87,11 @@ public function deletemail($email){
 }
 public function getproname($userid){
 	$result=mysqli_query($this->dbh,"select productname from tblproduct where id='$userid'");
+	return $result;
+}
+//insert user into database
+public function insertuser($fname,$lname,$email,$phoneNo,$address,$password){
+	$result =mysqli_query($this->dbh," insert into customers (firstName , lastName , email , address , phoneNo , password) values('$fname' , '$lname' ,'$email' , '$address' ,'$phoneNo' ,'$password')");
 	return $result;
 }
 }

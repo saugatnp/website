@@ -21,6 +21,7 @@
    <th>Last Name</th>
    <th>Email</th>
    <th>Contact</th>
+   <th>ProductName</th>
    <th>Address</th>
    <th>Posting Date</th>
    <th>Delete</th>
@@ -41,8 +42,10 @@ while($row=mysqli_fetch_array($sql))
       <td><?php echo htmlentities($row['LastName']);?></td>
       <td><?php echo htmlentities($row['EmailId']);?></td>
       <td><?php echo htmlentities($row['ContactNumber']);?></td>
+      <td><?php echo htmlentities($row['proname']);?></td>
       <td><?php echo htmlentities($row['Address']);?></td>
       <td><?php echo htmlentities($row['PostingDate']);?></td>
+      
    <td><a href="delete.php?emailid=<?php echo htmlentities($row['EmailId']);?>&&id=<?php echo htmlentities($row['id']);?>"><button class="btn btn-danger btn-xs" onClick="return confirm('Do you really want to delete');">Delete<span class="glyphicon glyphicon-trash"></span></button></a></td>
       </tr>
         <?php

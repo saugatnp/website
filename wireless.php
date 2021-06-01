@@ -29,7 +29,7 @@
         <div class="col-md-2 col-sm-5 my-2 my-md-0">
             <div class="card">
             <div>
-                <img width="200" height="200" src="http://localhost/website/images/<?=$row['images'];?>">
+                <img width="200" height="200" src="http://localhost:8080/website/images/<?=$row['images'];?>">
               </div>
               <div class="card-body">
                 <h5 class="card-title"><?php echo htmlentities($row['productname']);?></h5>
@@ -37,6 +37,7 @@
                   <span class="price">$<?php echo htmlentities($row['price']);?></span>
                 </h5>
                 <a href="productdetails.php?id=<?php echo htmlentities($row['id']);?>"><button type="submit">Details</button></a>
+               <br>
                <br>
                 <a href="php/form.php"> <button type="submit"  >Add to cart</button></a>
               </div>

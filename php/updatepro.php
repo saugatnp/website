@@ -23,7 +23,7 @@ $feature=$_POST['Features'];
 $price=$_POST['Price'];
 $category=$_POST['Category'];
 //Function Calling
-$sql=$updateprodata->updatepro($pname,$detail,$feature,$price,$category,$image,$userid);
+$sql=$updateprodata->updatepro($pname,$detail,$feature,$price,$category,$userid);
 // Mesage after updation
 echo "<script>alert('product Updated successfully');</script>";
 // Code for redirection

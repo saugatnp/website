@@ -7,13 +7,16 @@ include_once "navbar.php";
 <link rel="stylesheet" href="style.css">
 <link href="./style.css" rel="stylesheet"/>
 <body class="admin">
-    <div class="container">
-        <form action="" method="get">
-            Name :<br> <input type="text" name="name" />
+    <div class="container" my-4>
+        
+        <form action="" method="get" style=" display: flex;
+    flex-direction: column;
+    align-items: center;" ><h2>Admin Login</h2>
+            Name :<input type="text" name="name" />
             <br>
-            Password :<br> <input type="text" name="password" />
+            Password :<br> <input type="password" name="password" />
             <br>
-            <button type="submit">submit</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
     <?php 

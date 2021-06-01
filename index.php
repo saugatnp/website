@@ -23,15 +23,22 @@
         <div class="carousel-item active">
           <img src="wireless1.jpg"  >
           <div class="carousel-caption ">
-            <h3>Latest Product</h3>
+            
             <a href="wireless.php"><button style="background-color:transparent; border:none;" >Click to view more</button></a>
           </div>
         </div>
         <div class="carousel-item">
           <img src="wired1.png"  >
           <div class="carousel-caption ">
-            <h3>Latest Product</h3>
+            
             <a href="wired.php"><button style="background-color:transparent; border:none;" >Click to view more</button></a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="accessoriesaudiocord.png"  >
+          <div class="carousel-caption ">
+            
+            <a href="accessories.php"><button style="background-color:transparent; border:none;" >Click to view more</button></a>
           </div>
         </div>
       </div>

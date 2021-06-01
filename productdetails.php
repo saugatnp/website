@@ -24,10 +24,10 @@ while($row=mysqli_fetch_array($sql))
       ?>
       <div class="prodetail">
           <div  class="card">
-          <form action="php/form.php" method="post">
+          <form action="php/form.php?id=<?php echo htmlentities($row['id']);?>" method="post">
             <div class="image">
             <div>
-                <img width="800" height="450" src="http://localhost/website/images/<?=$row['images'];?>">
+                <img width="800" height="450" src="http://localhost:8080/website/images/<?=$row['images'];?>">
               </div>
                 
             </div>
