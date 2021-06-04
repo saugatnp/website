@@ -14,10 +14,12 @@ if(mysqli_num_rows($sql)>0){
     $token = $password.rand(20000,40000);
     $checkdata->updatetoken($token,$email,$password);
     setcookie("token",$token, time()+86400 ,"/");
-    echo "you've been logged in your token is $token";
+    // Message for successfull insertion
+echo "<script>alert('You've been successfully logged in.');</script>";
+echo "<script>window.location.href='../index.php'</script>";
 }
 else {
-    echo "username/password not matched";
+    echo "<script>alert('username/password not matched');</script>";
 }
 }
 

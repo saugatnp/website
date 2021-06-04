@@ -3,7 +3,16 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  
+  <?php 
+        // include database connection file
+        require_once "php/functions.php";
+        // Object creation
+        $DB=new DB_con();
+        $token = $_COOKIE['token'];
+        //get userdata through token
+
+        $sql = $DB->checktoken($token);
+        ?>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
@@ -31,9 +40,19 @@
         </div>
 
       </li>
-      <li class="nav-item">
+      <?php
+      if(mysqli_num_rows($sql)>0){
+      ?>
+  <a class="nav-link" href="sign_out.php">Sign out</a>
+  
+<?php 
+      }
+    else {
+      ?>
           <a class="nav-link" href="sign_up.php">Sign In</a>
- 
+          <?php
+}
+          ?>
       </li>
     </ul>
   </div>

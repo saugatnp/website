@@ -53,8 +53,8 @@
 }
 .footer{
     width: 100%;
-    bottom: 0;
-    position: fixed;
+   position: relative;
+   
 }
 
 .signform{

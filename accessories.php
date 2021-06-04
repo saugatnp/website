@@ -14,13 +14,14 @@
       </head>
       <body class="accessories">
       <h1 style=" font-size:60px; text-align:center;">ACCESSORIES</h1>
+      <div>
       <div class="row text-centre py-5">
   <?php
-   include 'php/functions.php';
-   $checkproduct=new DB_con();
    $check='accessories';
-   $hit2=$checkproduct->checkcat($check);
-   $sql=$checkproduct->fetchproduct();
+   
+   $hit2=$DB->checkcat($check);
+  
+   $sql=$DB->fetchproduct();
    $cnt=1;
    while($row=mysqli_fetch_assoc($hit2))
    {
@@ -38,7 +39,7 @@
                 <a href="productdetails.php?id=<?php echo htmlentities($row['id']);?>"><button >Details</button></a><br>
                 <br>
                 <form name="insertrecord" text-align="center" method="post" action="php/insert.php?id=<?php echo htmlentities($row['id']);?>">
-               <input type="submit" name="addcart" value="Add to Cart">
+               <input type="submit" name="addcart" value="Add to Cart" required>
                </form>
               </div>
             </div>

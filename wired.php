@@ -18,11 +18,9 @@
   <div class="wiredpro ">
   <div class="row text-centre py-5">
   <?php
-   include 'php/functions.php';
-   $checkproduct=new DB_con();
    $check='wired';
-   $hit2=$checkproduct->checkcat($check);
-   $sql=$checkproduct->fetchproduct();
+   $hit2=$DB->checkcat($check);
+   $sql=$DB->fetchproduct();
    $cnt=1;
    $click=0;
    while($row=mysqli_fetch_array($hit2))
