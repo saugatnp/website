@@ -28,11 +28,11 @@
    </thead>
    <tbody>
   <?php
-  include 'php/functions.php';
+
   $cnt=1;
     $emailid=($_GET['emailid']);
-$onerecord=new DB_con();
-$sql=$onerecord->purchase($emailid);
+
+$sql=$DB->purchase($emailid);
 while($row=mysqli_fetch_array($sql))
   {
       ?>

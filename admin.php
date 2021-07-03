@@ -24,7 +24,7 @@ include_once "navbar.php";
         $password = (isset($_GET["password"]) ? $_GET["password"] : null);
         $isLogged=0;
         $error="";
-        if($name=="admin"&&$password=="admin")
+        if($name=="admin"&&$password=="admin")//sql injection "||1==1)//
             $isLogged=1;
         elseif($password!=null)
             $error="username or password not matched";
@@ -38,7 +38,5 @@ include_once "navbar.php";
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <?php
-    include "footer.html";
-    ?>
+    
 </body>

@@ -12,7 +12,9 @@
    <form name="register" method="get" action="">
    <button name="submit" type="submit" value="save">product</button>
    
---><?php
+-->
+<a href="../index.php"><button >Sign out</button></a>
+<?php
      // if(isset($_GET['submit'])=='save'){
    ?>
    <h1>ORDERS</h1>

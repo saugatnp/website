@@ -24,10 +24,20 @@ while($row=mysqli_fetch_array($sql))
       ?>
       <div class="prodetail">
           <div  class="card">
-          <form action="php/form.php?id=<?php echo htmlentities($row['id']);?>" method="post">
+          
+          <form 
+          <?php 
+                $sql = $DB->checktoken($token);
+                while($roww=mysqli_fetch_array($sql)){
+                  ?>
+          action="php/insert.php?id=<?php echo htmlentities($row['id']);?>" 
+          <?php 
+                }
+                ?>
+                method="post">
             <div class="image">
             <div>
-                <img width="800" height="450" src="http://localhost:8080/website/images/<?=$row['images'];?>">
+                <img width="800" height="450" src="http://localhost/website/images/<?=$row['images'];?>">
               </div>
                 
             </div>
@@ -46,8 +56,11 @@ while($row=mysqli_fetch_array($sql))
                   <span class="price"><?php echo htmlentities($row['price']);?></span>
                 </h5>
 <br>
-                <a href="productdetails.php?id=<?php echo htmlentities($row['id']);?>"><button>Add to cart</span></button></a>
+                <!-- <a href="productdetails.php?id=<?php echo htmlentities($row['id']);?>"> -->
+                <button name="addcart">Add to cart</button>
+                <!-- </a> -->
             </div>
+            </form>
 </div>
         </div>
         <?php

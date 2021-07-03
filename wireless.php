@@ -33,12 +33,19 @@
               <div class="card-body">
                 <h5 class="card-title"><?php echo htmlentities($row['productname']);?></h5>
                 <h5>
-                  <span class="price">$<?php echo htmlentities($row['price']);?></span>
+                  <span class="price">Rs.<?php echo htmlentities($row['price']);?></span>
                 </h5>
                 <a href="productdetails.php?id=<?php echo htmlentities($row['id']);?>"><button type="submit">Details</button></a>
                <br>
                <br>
+               <?php 
+                $sql = $DB->checktoken($token);
+                while($row=mysqli_fetch_array($sql)){
+                  ?>
                <form name="insertrecord" text-align="center" method="post" action="php/insert.php?id=<?php echo htmlentities($row['id']);?>">
+               <?php 
+                }
+                ?>
                <input type="submit" name="addcart" value="Add to Cart">
                </form>
                <!-- <a href="php/insert.php?id=</*?php echo htmlentities($row['id']);?>"> <button method="post" type="submit" name="addcart" >Add to cart</button></a>-->

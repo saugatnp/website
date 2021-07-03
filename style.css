@@ -52,8 +52,9 @@
     float: left;
 }
 .footer{
+    min-height: 1000px;
     width: 100%;
-   position: relative;
+   /* position: relative; */
    
 }
 
