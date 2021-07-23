@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      IT Biz Solutions
+      RaizStore
     </title>
     <?php 
       
@@ -18,7 +18,7 @@
   <form style=" display: flex;
     flex-direction: column;
     align-items: center;" method="post" action="php/checkuser.php">
-    <h2>Member Login</h2>
+    <h2 style="margin-top:20px;">Member Login</h2>
   <div class="col-md-2 my-4">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>

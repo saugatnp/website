@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      IT Biz Solutions
+      RaizStore
     </title>
     <?php 
       include_once "php/functions.php" ;
@@ -52,12 +52,12 @@ while($row=mysqli_fetch_array($sql))
                     <br>
                     <br>
                     <br>
-                    <small><s>$25</s></small>
-                  <span class="price"><?php echo htmlentities($row['price']);?></span>
+                    
+                  <span class="price">Rs.<?php echo htmlentities($row['price']);?></span>
                 </h5>
 <br>
                 <!-- <a href="productdetails.php?id=<?php echo htmlentities($row['id']);?>"> -->
-                <button name="addcart">Add to cart</button>
+                <button class="btn btn-success btn-xs" name="addcart">Add to cart</button>
                 <!-- </a> -->
             </div>
             </form>

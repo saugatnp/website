@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      IT Biz Solutions
+      RaizStore
     </title>
     <?php 
       
@@ -20,33 +20,33 @@
     align-items: center;" method="post" action="php/insertuser.php">
   <div class="form-row">
     <div class="form-group ">
-      <label for="inputEmail4">FirstName</label>
-      <input type="text" class="form-control"  placeholder="FirstName" name="firstName">
+      <label for="inputEmail4" style="margin-top:20px;">First Name</label>
+      <input type="text" class="form-control"  placeholder="First Name" name="firstName" required>
     </div>
 </div>
 <div class="form-group ">
-      <label for="inputEmail4">LastName</label>
-      <input type="text" class="form-control"  placeholder="LastName" name="lastName">
+      <label for="inputEmail4">Last Name</label>
+      <input type="text" class="form-control"  placeholder="Last Name" name="lastName" required>
     </div>
     <div class="form-group ">
       <label for="inputEmail4">Email Id</label>
-      <input type="email" class="form-control"  placeholder="Email" name="email">
+      <input type="email" class="form-control"  placeholder="Email" name="email" required>
     </div>
   </div>
   <div class="form-group">
     <label for="inputAddress">Address</label>
-    <input type="text" class="form-control" placeholder="Address" name="address">
+    <input type="text" class="form-control" placeholder="Address" name="address" required>
   </div>
 
   <div class="form-row">
     <div class="form-group ">
       <label for="inputCity">Contact No</label>
-      <input type="number" class="form-control" name="phoneNo">
+      <input type="number" class="form-control" placeholder="Phone Number" name="phoneNo" required>
     </div>
   </div>
   <div class="form-group">
       <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control"  placeholder="Password" name="password">
+      <input type="password" class="form-control"  placeholder="Password" name="password" required>
     </div>
   </div>
   <button type="submit" name="insertbutton" class="btn btn-primary">Sign in</button>

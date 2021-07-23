@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-        IT Biz Solutions
+         RaizStore
         </title>
         <?php
         include_once "navbar.php";
@@ -19,9 +19,16 @@
                 <h2 style=" font-size:60px; text-align:center;">About Us</h2>
             </div>
             <br><br><br>
-            <p style="margin:50px; text-align:center;"><b>
-                We are small business called Wired, which specialises in selling high quality headphones and audio equipment. We have a small range of 4 types of wired headphones and 2 types of wireless headphones as well as accessories which make up our current product range.
-                The current capture area for the business is local, and we intend to expand this by getting an online presence through the use of an e-Commerce website. 
+            <p style="margin-left:24px; margin-right:30px; text-align:center;text-align: justify; font-size:25px;"><b>
+                RaizStore is established in 2016 to serve different types of computer accessories and peripherals. 
+                Today, we are present across various categories including  high quality headsets, keyboard, mouse,  mousepad and many more. 
+                We are expanding our business all over Nepal by delivering our products and sevices through the use of an e-Commerce website.
+                Our major slogan is to sell genuine products so that clients get true value for their money. 
+                In a market filled with knockoffs and counterfeits, we ensure that only genuine items are displayed on our website.
+                Let us take care of delivering your selected products at your doorsteps while you focus on other crucial tasks.
+                On RaizStore, all prices are listed in NRS with included VAT. Prices and availability may change at any time without notice.
+                RaizStore delivers to nearly every location in Nepal.
+
             </p></b>
         </section>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

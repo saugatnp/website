@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      IT Biz Solutions
+      RaizStore
     </title>
     <?php 
       include_once "navbar.php";
@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="">
-  <h1>PURCHASES</h1>
+  <h1 style="margin-left:20px; margin-top:20px;">Order</h1>
 <table id="mytable" class="table table-bordred table-striped">
    <thead>
-   <th>#</th>
+   <th>SN</th>
    <th>First Name</th>
    <th>Last Name</th>
    <th>Email</th>
@@ -51,6 +51,7 @@ while($row=mysqli_fetch_array($sql))
         <?php
         $cnt++;
   }
+  include "footer.html";
   ?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

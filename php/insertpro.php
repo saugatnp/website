@@ -17,10 +17,10 @@ $target="../images/".basename($_FILES['image']['name']);
 //Function Calling
 $sql=$insertdata->insertpro($pname,$detail,$feature,$price,$category,$image);
 if(move_uploaded_file($_FILES['image']['tmp_name'],$target)){
-    $msg= "uploaded successfully";
+    $msg= "Uploaded Successfully";
 }
 else{
-    $msg= "upload unsuccessful";
+    $msg= "Upload Unsuccessful";
 }
 if($sql)
 {

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">IT Biz Solutions</a>
+  <a class="navbar-brand" href="#">RaizStore</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -43,13 +43,21 @@
       <?php
       if(mysqli_num_rows($sql)>0){
       ?>
-  <a class="nav-link" href="sign_out.php">Sign out</a>
-  
+  <a class="nav-link" href="sign_out.php">Sign Out</a>
+  <li class="nav-item">
+        <?php
+          while($row=mysqli_fetch_array($sql))
+          {
+            
+        ?>
+        <a class="nav-link" name="addcart" href="purchases.php?emailid=<?php echo htmlentities($row['email']);?>">Cart</a>
+      </li>
 <?php 
       }
+    }
     else {
       ?>
-          <a class="nav-link" href="sign_up.php">Sign In</a>
+          <a class="nav-link" href="sign_up.php">Sign Up</a>
           <?php
 }
           ?>

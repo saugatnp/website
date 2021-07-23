@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      IT Biz Solutions
+      RaizStore
     </title>
     <?php 
       include_once "php/functions.php" ;
@@ -39,11 +39,11 @@
           <img src="wired1.png"  >
           <div class="carousel-caption ">
             
-            <a href="wired.php"><button style="background-color:transparent; border:none;" >Click to view more</button></a>
+            <a href="wired.php"><button style="background-color:transparent; border:none; color:white;" >Click to view more</button></a>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="accessoriesaudiocord.png"  >
+          <img src="accessories1.jpg"  >
           <div class="carousel-caption ">
             
             <a href="accessories.php"><button style="background-color:transparent; border:none;" >Click to view more</button></a>

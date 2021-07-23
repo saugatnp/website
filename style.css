@@ -1,6 +1,6 @@
 *{
-    margin: 0; 
-    padding: 0; 
+    margin: 2; 
+    padding: 2; 
     box-sizing: border-box;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
     max-width: 100%;
@@ -10,9 +10,10 @@
     width: 80%;
     height: 80vh;
 }
+
 .carousel-caption{
     width: 80%;
-    color : black;
+    color : rgb(0, 0, 0);
     font-size: 50px;
 }
 .navbar-brand{
@@ -20,10 +21,10 @@
 }
 .aboutus{
     width: 100%;
-    background-color: gray;
+    background-color: rgb(241, 241, 241);
 }
-.wired,.wireless,.accessories,.admin,.adminindex{
-    background-color: gray;
+    .wired,.wireless,.accessories,.admin,.adminindex{
+    background-color: rgb(241, 255, 239);
 }
 .card{
     text-align: center;
@@ -39,7 +40,7 @@
 }
 .fulldetail{
     height:100%;
-    background-color:gray;
+    background-color:rgb(245, 252, 241);
 }
 .prodetail{
     margin: 40px;
@@ -51,11 +52,19 @@
     height:80%;
     float: left;
 }
-.footer{
-    min-height: 1000px;
+.footer {
+    position: fixed;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
     width: 100%;
-   /* position: relative; */
-   
+    background-color: rgb(7, 126, 110);
+    text-align: center;
+  }
+a{
+    color: #f1f1f1;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 .signform{

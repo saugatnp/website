@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      IT Biz Solutions
+      RaizStore
     </title>
     <?php 
       include_once "navbar.php";
@@ -35,7 +35,7 @@
                 <h5>
                   <span class="price">Rs.<?php echo htmlentities($row['price']);?></span>
                 </h5>
-                <a href="productdetails.php?id=<?php echo htmlentities($row['id']);?>"><button type="submit">Details</button></a>
+                <a href="productdetails.php?id=<?php echo htmlentities($row['id']);?>"><button type="submit" class="btn btn-info btn-xs">Details</button></a>
                <br>
                <br>
                <?php 
@@ -46,7 +46,7 @@
                <?php 
                 }
                 ?>
-               <input type="submit" name="addcart" value="Add to Cart">
+               <input class="btn btn-success btn-xs" type="submit" name="addcart" value="Add to Cart">
                </form>
                <!-- <a href="php/insert.php?id=</*?php echo htmlentities($row['id']);?>"> <button method="post" type="submit" name="addcart" >Add to cart</button></a>-->
               </div>

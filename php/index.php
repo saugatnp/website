@@ -13,14 +13,14 @@
    <button name="submit" type="submit" value="save">product</button>
    
 -->
-<a href="../index.php"><button >Sign out</button></a>
+<a href="../index.php"><button class="btn btn-dark btn-xs" style="float:right; margin-right: 5px; margin-top:5px;">Log Out</button></a>
 <?php
      // if(isset($_GET['submit'])=='save'){
    ?>
-   <h1>ORDERS</h1>
+   <h2 style="text-align:center; margin-top:10px; color:darkblue;">ORDERS</h2>
    <table id="mytable" class="table table-bordred table-striped">
    <thead>
-   <th>#</th>
+   <th>SN</th>
    <th>First Name</th>
    <th>Last Name</th>
    <th>Email</th>
@@ -30,7 +30,7 @@
    <th>Posting Date</th>
    <th>Edit</th>
    <th>Delete</th>
-   <th>details</th>
+   <th>Details</th>
    </thead>
    <tbody>
    <?php
@@ -52,7 +52,7 @@
       <td><?php echo htmlentities($row['PostingDate']);?></td>
    <td><a href="updateform.php?id=<?php echo htmlentities($row['id']);?>"><button class="btn btn-primary btn-xs">Edit<span class="glyphicon glyphicon-pencil"></span></button></a></td>
    <td><a href="delete.php?id=<?php echo htmlentities($row['id']);?>"><button class="btn btn-danger btn-xs" onClick="return confirm('Do you really want to delete');">Delete<span class="glyphicon glyphicon-trash"></span></button></a></td>
-   <td><a href="details.php?id=<?php echo htmlentities($row['id']);?>"><button class="btn btn-danger btn-xs" onClick="return confirm('Do you really want to details');">Detail<span class="glyphicon glyphicon-trash"></span></button></a></td>
+   <td><a href="details.php?id=<?php echo htmlentities($row['id']);?>"><button class="btn btn-info btn-xs" onClick="return confirm('Do you really want to details');">Detail<span class="glyphicon glyphicon-trash"></span></button></a></td>
       </tr>
 <?php
 // for serial number increment
@@ -60,20 +60,20 @@ $cnt++;
 } ?>
 </tbody>
 </table>
-<a href="formpro.php"><button onClick="return confirm('Do you want to add product?');">Add Product</button></a>
-<h1>PRODUCTS</h1>
+<a href="formpro.php"><button class="btn btn-success btn-xs" style="float:right; margin-right: 5px;" onClick="return confirm('Do you want to add product?');">Add Product</button></a>
+<h2 style="text-align:center;color:darkblue;">PRODUCTS</h2>
 <table id="mytable" class="table table-bordred table-striped">
    <thead>
-   <th>#</th>
-   <th>product name</th>
+   <th>SN</th>
+   <th>Product Name</th>
    <th>Category</th>
-   <th>detail</th>
-   <th>feature</th>
-   <th>price</th>
+   <th>Detail</th>
+   <th>Feature</th>
+   <th>Price</th>
 
    <th>Edit</th>
    <th>Delete</th>
-   <th>details</th>
+   <th>Details</th>
    </thead>
    <tbody>
    <?php
@@ -95,7 +95,7 @@ $cnt++;
 
       <td><a href="updateformpro.php?id=<?php echo htmlentities($row['id']);?>"><button class="btn btn-primary btn-xs">Edit<span class="glyphicon glyphicon-pencil"></span></button></a></td>
       <td><a href="deletepro.php?id=<?php echo htmlentities($row['id']);?>"><button class="btn btn-danger btn-xs" onClick="return confirm('Do you really want to delete');">Delete<span class="glyphicon glyphicon-trash"></span></button></a></td>
-      <td><a href="detailspro.php?id=<?php echo htmlentities($row['id']);?>"><button class="btn btn-danger btn-xs" onClick="return confirm('Do you really want to details');">Detail<span class="glyphicon glyphicon-trash"></span></button></a></td>
+      <td><a href="detailspro.php?id=<?php echo htmlentities($row['id']);?>"><button class="btn btn-info btn-xs" onClick="return confirm('Do you really want to details');">Detail<span class="glyphicon glyphicon-trash"></span></button></a></td>
       
    </tr>
   

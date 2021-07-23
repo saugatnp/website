@@ -11,12 +11,12 @@ include_once "navbar.php";
         
         <form action="" method="get" style=" display: flex;
     flex-direction: column;
-    align-items: center;" ><h2>Admin Login</h2>
-            Name :<input type="text" name="name" />
+    align-items: center;" ><h2 style="margin-top:20px;">Admin Login</h2>
+            Name :<input type="text" name="name" required/>
             <br>
-            Password :<br> <input type="password" name="password" />
+            Password :<br> <input type="password" name="password" required/>
             <br>
-            <button type="submit">Submit</button>
+            <button class="btn btn-success btn-xs" type="submit">Log In</button>
         </form>
     </div>
     <?php 
@@ -27,13 +27,14 @@ include_once "navbar.php";
         if($name=="admin"&&$password=="admin")//sql injection "||1==1)//
             $isLogged=1;
         elseif($password!=null)
-            $error="username or password not matched";
+            $error="Username or Password is not matched";
         if($isLogged){
             header("Location: php/index.php");       
         }
         elseif($error!=""){
             echo $error;
         }
+        include "footer.html";
     ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

@@ -9,7 +9,7 @@
 
 <body>
 
-    <div class="formdiv">
+    <div class="formdiv" style="margin-left:50px; margin-top:20px;">
 
         <form name="insertrecord" method="post" action="insertpro.php" enctype="multipart/form-data">
 
@@ -22,22 +22,22 @@
                 </div><br>
             </div>
             <div class="row">
-                <div class="col-md-4"><b>Features</b>
+                <div class="col-md-4"style="margin-top:10px;"><b>Features</b>
                     <input type="text" name="features" class="form-control" required>
                 </div><br>
-                <div class="col-md-4"><b>Price</b>
+                <div class="col-md-4" style="margin-top:10px;"><b>Price</b>
                     <input type="text" name="price" class="form-control" maxlength="10" required>
                 </div><br>
             </div>
             <div class="row">
-                <div class="col-md-8"><b>Category</b>
+                <div class="col-md-8" style="margin-top:10px;"><b>Category</b>
                     <select name="category">
                         <option value="wired">Wired</option>
                         <option value="wireless">Wireless</option>
                         <option value="accessories">Accessories</option>
                     </select>
                 </div><br>
-                <div class="col-md-8"><b>Image</b>
+                <div class="col-md-8" style="margin-top:10px;"><b>Image</b>
                     <input type="hidden" name="size" value="1000000">
                     <div>
                         <input type="file" name="image">
@@ -45,11 +45,12 @@
                 </div>
             </div>
             <div class="row col-md-8" style="margin-top:1%">
-                <input type="submit" name="insert" value="Submit">
+                <input class="btn btn-success btn-xs" type="submit" name="insert" value="Submit">
             </div>
 
 
         </form>
+        
     </div>
 
 </body>

@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      IT Biz Solutions
+      RaizStore
     </title>
     <?php 
       
@@ -12,9 +12,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css"
   </head>
   <body class="wired">
-  <h1 style=" font-size:60px; text-align:center;">WIRED</h1>
+  <h1 style=" font-size:55px; text-align:center;">WIRED</h1>
   <div class="wiredpro ">
   <div class="row text-centre py-5">
   <?php
@@ -37,7 +38,7 @@
                 <h5>
                   <span class="price">Rs.<?php echo htmlentities($row['price']);?></span>
                 </h5>
-                <a href="productdetails.php?id=<?php echo htmlentities($row['id']);?>"><button >Details</button></a><br>
+                <a href="productdetails.php?id=<?php echo htmlentities($row['id']);?>"><button class="btn btn-info btn-xs">Details</button></a><br>
                 <br>
                 <?php 
                 $sql = $DB->checktoken($token);
@@ -48,7 +49,7 @@
                <?php 
                 }
                 ?>
-               <input type="submit" name="addcart" value="Add to Cart">
+               <input class="btn btn-success btn-xs" type="submit" name="addcart" value="Add to Cart">
                </form>
               </div>
             </div>

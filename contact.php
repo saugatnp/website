@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-        IT Biz Solutions
+          RaizStore
         </title>
         <?php
         include_once "navbar.php";
@@ -16,15 +16,15 @@
         <section >
             <div>
                 <br><br>
-                <h2 style=" font-size:60px; text-align:center;">Contact Us</h2>
+                <h2 style=" font-size:50px; text-align:center;">Contact Us</h2>
             </div>
             <br><br><br>
             <p >
-            <pre><b><center>
-            Name:       IT Biz Solutions<br>
-            Address:  Namsaling-4,Illam<br>
-            Telephone number:027-520145<br>
-            Email address:   <a href="mailto:info@itbizsolutions.com.au">info@itbizsolutions.com.au</a></b><br></center>
+            <pre style="font-size:20px"><b><center>
+            Name: RaizStore<br>
+            Address: Maitidevi-4, Kathmandu<br>
+            Telephone number: 01-520145<br>
+            Email address: <a href="mailto:kishor.rai@study.lbef.edu.np" style="color:darkblue; hover">kishor.rai@study.lbef.edu.np</a></b><br></center>
   </pre>
         </p>
         </section>

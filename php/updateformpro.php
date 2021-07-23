@@ -17,36 +17,37 @@ $cnt=1;
 while($row=mysqli_fetch_array($sql))
   {
   ?>
+<div class="formdiv" style="margin-left:50px; margin-top:20px;">
 <form name="insertrecord" method="post" action="updatepro.php">
 <div class="row">
 <input type="hidden" name="id" value="<?php echo htmlentities($row['id']);?>" class="form-control" required>
-<div class="col-md-4"><b>product name</b>
+<div class="col-md-4"><b>Product Name</b>
 <input type="text" name="Productname" value="<?php echo htmlentities($row['productname']);?>" class="form-control" required>
 </div>
-<div class="col-md-4"><b>details</b>
+<div class="col-md-4"><b>Details</b>
 <input type="text" name="Details" value="<?php echo htmlentities($row['details']);?>" class="form-control" required>
 </div>
 </div>
 <div class="row">
-<div class="col-md-4"><b>features</b>
+<div class="col-md-4" style="margin-top:10px;"><b>Features</b>
 <input type="text" name="Features" value="<?php echo htmlentities($row['features']);?>" class="form-control" required>
 </div>
-<div class="col-md-4"><b>price</b>
+<div class="col-md-4" style="margin-top:10px;"><b>Price</b>
 <input type="text" name="Price" value="<?php echo htmlentities($row['price']);?>" class="form-control" maxlength="10" required>
 </div>
 </div>
 <div class="row">
-<div class="col-md-4"><b>category</b>
+<div class="col-md-4" style="margin-top:10px;"><b>Category</b>
 <input type="text" name="Category" value="<?php echo htmlentities($row['category']);?>" class="form-control" maxlength="10" required>
 </div>
 </div>
 <?php } ?>
 <div class="row" style="margin-top:1%">
 <div class="col-md-8">
-<input type="submit" name="updatepro" value="Update">
+<input class="btn btn-success btn-xs" type="submit" name="updatepro" value="Update">
 </div>
 </div>
      </form>
-
+  </div>
 </body>
 </html>
