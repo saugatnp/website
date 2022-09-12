@@ -28,7 +28,7 @@
         <div class="col-md-2 col-sm-5 my-2 my-md-0">
             <div class="card">
             <div>
-                <img width="200" height="200" src="http://localhost/website/images/<?=$row['images'];?>">
+                <img width="200" height="200" src="http://localhost:8080/website/images/<?=$row['images'];?>">
               </div>
               <div class="card-body">
                 <h5 class="card-title"><?php echo htmlentities($row['productname']);?></h5>

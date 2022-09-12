@@ -1,9 +1,9 @@
 <?php
 session_start();
 define('DB_SERVER','localhost');
-define('DB_USER','saugat');
-define('DB_PASS' ,'saugat');
-define('DB_NAME', 'website');
+define('DB_USER','root');
+define('DB_PASS' ,'');
+define('DB_NAME', 'ecommerce');
 class DB_con
 {
 public function __construct()
