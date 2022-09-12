@@ -2,7 +2,7 @@
 <html>
       <head>
             <title>
-             RaizStore
+             Ecommerce
             </title>
             <?php 
                   include_once "navbar.php";
